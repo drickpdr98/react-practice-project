@@ -22,7 +22,7 @@ export default function AddUser(props) {
 
     if (enteredAge < 1) return;
 
-    console.log(enteredUsername.trim().length, enteredAge.trim().length);
+    props.onAddUser(enteredUsername, enteredAge);
     setEnteredUsername("");
     setEnteredAge("");
   };

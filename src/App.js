@@ -8,6 +8,7 @@ function App() {
   const [usersList, setUsersList] = useState([]);
 
   const addUserHandler = (userName, userAge) => {
+    // understand what this does
     setUsersList((prevUsers) => [
       ...prevUsers,
       { name: userName, age: userAge, id: Math.random().toString },
